@@ -1,0 +1,24 @@
+{
+  "name": "webpack-babel-react",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev-server": "webpack-dev-server -d --colors --content-base www/",
+    "build-prod": "webpack -p --colors",
+    "build-dev": "webpack -d --colors"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "babel-core": "^4.7.1",
+    "babel-loader": "^4.1.0",
+    "babel-runtime": "^4.7.1",
+    "express": "^4.13.3",
+    "history": "^1.2.5",
+    "holderjs": "^2.9.0",
+    "react": "^0.14.2",
+    "react-dom": "^0.14.2",
+    "react-router": "^1.0.0-rc1",
+    "webpack": "^1.7.2",
+    "webpack-dev-server": "^1.7.0"
+  }
+}

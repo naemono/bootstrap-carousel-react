@@ -1,0 +1,101 @@
+#page-top {
+    min-height: 100%;
+}
+
+.test-main {
+  overflow:auto;
+  padding-bottom:120px; /* this needs to be bigger than footer height*/
+}
+
+.testpage {
+    background-color: lightgrey;
+}
+
+.navbar-nomain {
+    background-color: white;
+}
+
+.navbar-default .navbar-header .navbar-brand-nomain {
+    text-transform: uppercase;
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-weight: 700;
+    color: #f05f40;
+}
+
+.navbar-nomain .nav > li > a {
+    color: #222 !important;
+}
+
+.headline-bg.test-headline-bg {
+    background-image: url('http://themes.3rdwavemedia.com/velocity/1.5.4/assets/images/background/bg-header-small-2.jpg');
+}
+.headline-bg {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 500px;
+    background: #253340 url('http://themes.3rdwavemedia.com/velocity/1.5.4/assets/images/background/bg-header-small-1.jpg') no-repeat 50% top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.title {
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    display: block;
+    font-family: Roboto, arial, sans-serif;
+    font-size: 36px;
+    font-weight: 300;
+    height: 39px;
+    line-height: 39.6px;
+    margin-bottom: 30px;
+    margin-top: 0px;
+    text-align: center;
+    width: 1140px;
+}
+
+.highlight {
+    color: #f05f40;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.test-headline-bg-text .section {
+    position: relative;
+    z-index: 1;
+}
+
+.test-headline-bg-text .section .container .title{
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.test-footer {
+    background-color: #2F2F2F;
+    position: relative;
+    margin-top: -120px; /* negative value of footer height */
+    height: 120px;
+    clear:both;
+    padding-top:20px;
+}
+
+.test-footer .row.text-center .footer-header {
+    color: #DEDEDE;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-items ul li a {
+    color: #DEDEDE;
+    font-size: 14px;
+}
+
+.footer-items ul li a i {
+    margin-right: 6px;
+}
