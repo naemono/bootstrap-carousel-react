@@ -2,6 +2,20 @@ import React from 'react'
 import { IndexLink, Link } from 'react-router'
 
 class NavBar extends React.Component {
+    _onMarketingClick() {
+        console.log('on marketing click');
+        if (location.pathname === '/') {
+            $('#marketing')[0].scrollIntoView(true);
+        }
+    }
+
+    _onFeaturetteClick() {
+        console.log('on featurette click');
+        if (location.pathname === '/') {
+            $('#featurette')[0].scrollIntoView(true);
+        }
+    }
+
     render() {
         console.log('rendering navbar');
 
@@ -18,15 +32,16 @@ class NavBar extends React.Component {
                         <span className="icon-bar"></span>
                         <span className="icon-bar"></span>
                       </button>
-                      <a className="navbar-brand" href="#">Project name</a>
+                      <Link to='/' className="navbar-brand">Project Name</Link>
                     </div>
                     <div id="navbar" className="navbar-collapse collapse">
                       <ul className="nav navbar-nav">
                         <li className="active"><a href="#">Home</a></li>
-                        <li><Link to='/' hash='#marketing'>Marketing</Link></li>
-                        <li><a href="#featurette">Featurette</a></li>
+                        <li><Link to='/' hash='#marketing' onClick={this._onMarketingClick}>Marketing</Link></li>
+                        <li><Link to='/' hash='#featurette' onClick={this._onFeaturetteClick}>Featurette</Link></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#contact">Contact</a></li>
+                        <li><Link to='/test'>Test</Link></li>
                         <li className="dropdown">
                           <a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span className="caret"></span></a>
                           <ul className="dropdown-menu">

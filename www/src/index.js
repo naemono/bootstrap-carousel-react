@@ -9,6 +9,7 @@ import NavBar from './views/NavBar'
 import Carousel from './views/Carousel'
 import Marketing from './views/Marketing'
 import Featurette from './views/Featurette'
+import Test from './views/Test'
 
 let history = createBrowserHistory();
 
@@ -26,8 +27,18 @@ const Footer = React.createClass({
 // Create our App component
 const App = React.createClass({
 
+    componentDidMount: function() {
+        console.log('componentDidMount App'); // Prints 'bar'
+        if (location.pathname === '/') {
+            if (location.hash != null) {
+                if ($(location.hash) != null) {
+                    $(location.hash)[0].scrollIntoView(true);
+                }
+            }
+        }
+    },
+
     render() {
-        console.log('rendering app');
         return (
             <div style={{"height" : "100%"}}>
                 <NavBar />
@@ -48,5 +59,6 @@ render((
   <Router history={history}>
     <Route path="/" component={App}>
     </Route>
+    <Route path="/test" component={Test} />
   </Router>
 ), document.getElementById('main'))
